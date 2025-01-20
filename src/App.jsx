@@ -1,8 +1,8 @@
 function App() {
   return (
-    <div className="flex min-h-screen flex-col bg-very-light-blue font-serif">
-      <main className="flex flex-1 items-center">
-        <div className="bg-white text-base sm:container md:container sm:mx-auto sm:grid sm:text-lg md:mx-auto md:my-4 md:grid-cols-2 md:rounded-3xl">
+    <div className="flex min-h-screen flex-col font-serif md:bg-very-light-blue">
+      <main className="flex flex-1 sm:items-start md:items-center md:p-4">
+        <div className="bg-white text-base sm:container md:container sm:mx-auto sm:grid sm:text-lg md:mx-auto md:grid-cols-2 md:rounded-3xl">
           {/* Result */}
           <div className="flex flex-col gap-6 rounded-b-3xl bg-gradient-1 px-14 pb-10 pt-6 text-center font-bold text-light-blue drop-shadow-3xl md:gap-7 md:rounded-3xl md:pb-11 md:pt-9">
             <h1 className="text-lg sm:text-2xl">Your Result</h1>
@@ -66,15 +66,15 @@ function App() {
               </li>
             </ul>
             <button
-              className="w-full rounded-full bg-dark-navy py-4 text-lg text-white transition-colors duration-300 hover:bg-gradient-1 hover:drop-shadow-3xl md:mt-3"
+              className="relative w-full rounded-full bg-dark-navy py-4 text-lg text-white duration-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:rounded-full before:bg-gradient-1 before:opacity-0 before:transition-opacity hover:drop-shadow-3xl hover:before:opacity-100 hover:before:drop-shadow-3xl md:mt-3"
               type="button"
             >
-              Continue
+              <span className="relative z-10">Continue</span>
             </button>
           </div>
         </div>
       </main>
-      <footer className="bg-white text-center text-xs sm:bg-very-light-blue">
+      <footer className="bg-white text-center text-xs md:bg-very-light-blue">
         Challenge by{' '}
         <a
           className="text-red"
