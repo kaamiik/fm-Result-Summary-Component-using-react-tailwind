@@ -29,7 +29,7 @@ function ResultSection({ data }) {
   return (
     <section
       aria-labelledby="result"
-      className="flex flex-col gap-6 rounded-b-3xl bg-gradient-1 px-14 pb-10 pt-6 text-center font-bold text-light-blue drop-shadow-3xl md:gap-7 md:rounded-3xl md:pb-11 md:pt-9"
+      className="flex flex-col gap-6 rounded-b-3xl bg-gradient-1 px-14 pb-10 pt-6 text-center font-bold text-light-blue drop-shadow-3xl md:gap-7 md:rounded-3xl md:pb-11 md:pt-9 md:drop-shadow-none"
     >
       <h1 id="result" className="text-lg sm:text-2xl">
         Your Result
