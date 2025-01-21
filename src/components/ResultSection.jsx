@@ -19,7 +19,7 @@ function ResultSection({ data }) {
     if (score >= 90) return 90;
     if (score >= 70) return 65;
     if (score >= 50) return 45;
-    return 40;
+    return 20;
   };
 
   const score = calculateScore(data);
