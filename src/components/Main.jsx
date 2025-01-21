@@ -4,7 +4,7 @@ import SummarySection from './SummarySection';
 
 async function fetchData() {
   try {
-    const response = await fetch('/src/data/data.json');
+    const response = await fetch('/data/data.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
