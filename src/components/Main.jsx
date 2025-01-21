@@ -40,7 +40,7 @@ function Main() {
 
   return (
     <main className="flex flex-1 sm:items-start md:items-center md:p-4">
-      <div className="bg-white text-base sm:container md:container sm:mx-auto sm:grid sm:text-lg md:mx-auto md:grid-cols-2 md:rounded-3xl">
+      <div className="bg-white text-base sm:container md:container sm:mx-auto sm:grid sm:text-lg md:mx-auto md:grid-cols-2 md:rounded-3xl md:drop-shadow-3xl">
         <ResultSection data={data} />
         <SummarySection data={data} />
       </div>
