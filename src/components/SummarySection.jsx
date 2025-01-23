@@ -40,46 +40,6 @@ function SummarySection({ data }) {
             </li>
           );
         })}
-        {/* <li className="flex items-center justify-between rounded-[12px] bg-red/5 p-4">
-          <div className="flex items-center gap-3">
-            <img src="./assets/images/icon-reaction.svg" alt="" />
-            <p className="text-red">Reaction</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <p>80</p>
-            <span className="text-dark-navy/50"> / 100</span>
-          </div>
-        </li>
-        <li className="flex items-center justify-between rounded-[12px] bg-yellow/5 p-4">
-          <div className="flex items-center gap-3">
-            <img src="./assets/images/icon-memory.svg" alt="" />
-            <p className="text-yellow">Memory</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <p>92</p>
-            <span className="text-dark-navy/50"> / 100</span>
-          </div>
-        </li>
-        <li className="flex items-center justify-between rounded-[12px] bg-green/5 p-4">
-          <div className="flex items-center gap-3">
-            <img src="./assets/images/icon-verbal.svg" alt="" />
-            <p className="text-green">Verbal</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <p>61</p>
-            <span className="text-dark-navy/50"> / 100</span>
-          </div>
-        </li>
-        <li className="flex items-center justify-between rounded-[12px] bg-blue/5 p-4">
-          <div className="flex items-center gap-3">
-            <img src="./assets/images/icon-visual.svg" alt="" />
-            <p className="text-blue">Visual</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <p>72</p>
-            <span className="text-dark-navy/50"> / 100</span>
-          </div>
-        </li> */}
       </ul>
       <Button>Continue</Button>
     </section>
