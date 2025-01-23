@@ -12,14 +12,19 @@ function SummarySection({ data }) {
       <ul className="flex flex-col gap-4">
         {data.map((item, index) => {
           let color;
+          let bgColor;
           if (item.category === 'Reaction') {
-            color = 'red';
+            color = 'text-red';
+            bgColor = 'bg-red/5';
           } else if (item.category === 'Memory') {
-            color = 'yellow';
+            color = 'text-yellow';
+            bgColor = 'bg-yellow/5';
           } else if (item.category === 'Verbal') {
-            color = 'green';
+            color = 'text-green';
+            bgColor = 'bg-green/5';
           } else if (item.category === 'Visual') {
-            color = 'blue';
+            color = 'text-blue';
+            bgColor = 'bg-blue/5';
           } else {
             throw new Error('This category is undefined');
           }
@@ -27,11 +32,11 @@ function SummarySection({ data }) {
           return (
             <li
               key={index}
-              className={`flex items-center justify-between rounded-[12px] bg-${color}/5 p-4`}
+              className={`flex items-center justify-between rounded-[12px] ${bgColor} p-4`}
             >
               <div className="flex items-center gap-3">
                 <img src={item.icon} alt="" />
-                <p className={`text-${color}`}>{item.category}</p>
+                <p className={color}>{item.category}</p>
               </div>
               <div className="flex items-center gap-2">
                 <p>{item.score}</p>
